@@ -27,9 +27,9 @@ parser.add_argument('--lamb_c', type=float, help='Weight of consistency loss lam
 parser.add_argument('--lamb_t', type=float, help='Weight of teacher model loss lambda_t.', default=0.0)
 parser.add_argument('--log_valid', type=int, help='Logging valid score each log_valid epochs.', default=1)
 parser.add_argument('--log_epoch', type=int, help='Logging training during a global run.', default=1)
-parser.add_argument('--dataset', type=str, help='Dataset.', default='vcc2018')
-parser.add_argument('--data_path', type=str, help='Path to data.', default='../VCC2018/testVCC2/')
-parser.add_argument('--id_table', type=str, help='Path to ID of judges.', default='../VCC2018/id_table/')
+parser.add_argument('--dataset', type=str, help='Dataset.', default='bvcc')
+parser.add_argument('--data_path', type=str, help='Path to data.', default='/home/hbml/demo/Nikhil/DeePMOS/BVCC/DATA/')
+parser.add_argument('--id_table', type=str, help='Path to ID of judges.', default='/home/hbml/demo/Nikhil/DeePMOS/BVCC/DATA/id_table/')
 parser.add_argument('--save_path', type=str, help='Path to save the model.', default='')
 args = parser.parse_args()
 
